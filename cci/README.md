@@ -17,4 +17,16 @@ This is a simple static site for a computer training center (CCI).
 - Change colors in `assets/css/styles.css` (CSS variables at the top).
 - Form submits open your mail client. Replace `info@cci.example.com` with your email or wire up a backend.
 
+## Deploy to GitHub Pages
+This project is ready for GitHub Pages.
+
+Quick publish (recommended):
+1. Push this repository to GitHub (e.g., `origin/main`).
+2. The included GitHub Actions workflow (`.github/workflows/deploy-pages.yml`) will automatically deploy the `main` branch to GitHub Pages. The first run may take a minute.
+3. Visit `https://<your-username>.github.io/<your-repo>/` after the workflow completes. If you want a custom domain, add a `CNAME` file and configure DNS.
+
+Notes:
+- A `.nojekyll` file is included to bypass Jekyll processing.
+- Ensure your repository's default branch is `main` (or update the workflow trigger accordingly).
+
 Enjoy! 🚀

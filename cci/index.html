@@ -8,51 +8,76 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="left">📍 Khajuriya, Ghazipur U.P 233001 &nbsp; | &nbsp; <a href="contact.html">Contact us</a></div>
+      <!-- <div class="right"><a href="courses.html">Admissions</a> &nbsp;|&nbsp; <a href="contact.html">Student Login</a></div> -->
+    </div>
+  </div>
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="logo">
         <img src="assets/images/logo.svg" alt="CCI logo" height="40">
-        <span class="brand">CCI</span>
+        <span class="brand">Career Computer Institute</span>
       </a>
-      <nav class="nav" id="nav">
+      <nav class="nav" id="nav" role="navigation">
         <a href="index.html">Home</a>
         <a href="courses.html">Courses</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Computer training for everyone</h1>
-        <p class="lead">Affordable, practical courses: learn Python, CCC, O-Level computer studies and more.</p>
-        <p><a class="btn" href="courses.html">View Courses</a></p>
+    <section class="hero hero-banner">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Welcome to CCI — Computer Training</h1>
+          <p class="lead">Practical, exam-focused courses: Python, CCC, O-Level and more.</p>
+          <p><a class="btn" href="courses.html">Our Courses</a> <a class="btn" href="contact.html">Contact / Enroll</a></p>
+        </div>
+        <div class="hero-image">
+          <img src="assets/images/hero.svg" alt="Students learning" />
+        </div>
       </div>
     </section>
 
-    <section class="courses container">
-      <h2>Featured Courses</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Python</h3>
-          <p>From basics to scripting and automation with hands-on projects.</p>
-          <p><a href="course-python.html" class="btn small">Details</a></p>
-        </article>
+    <section class="content container">
+      <div class="columns">
+        <main class="main-col">
+          <div class="announcements card">
+            <h2>News & Announcements</h2>
+            <ul id="newsList" class="news-list">
+              <!-- populated by JS -->
+            </ul>
+            <p><a href="news.html" class="muted">View all »</a></p>
+          </div>
 
-        <article class="card">
-          <h3>CCC</h3>
-          <p>Certificate in Computer Concepts: essential digital skills & office apps.</p>
-          <p><a href="course-ccc.html" class="btn small">Details</a></p>
-        </article>
+          <div class="events card">
+            <h2>Events</h2>
+            <ul id="eventsList" class="events-list"></ul>
+          </div>
+        </main>
 
-        <article class="card">
-          <h3>O-Level</h3>
-          <p>Exam-focused O-Level computer studies with past paper practice and tips.</p>
-          <p><a href="course-olevel.html" class="btn small">Details</a></p>
-        </article>
+        <aside class="sidebar-col">
+          <div class="quick-links card">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="course-python.html">Python</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+
+          <div class="gallery card">
+            <h3>Gallery</h3>
+            <div class="gallery-grid" id="galleryGrid"></div>
+            <p><a href="gallery.html" class="muted">View gallery »</a></p>
+          </div>
+        </aside>
       </div>
     </section>
 
@@ -60,7 +85,7 @@
       <h2>Ready to start?</h2>
       <p>Contact us or enroll in a course directly.</p>
       <p><a href="contact.html" class="btn">Contact / Enroll</a></p>
-    </section>
+    </section> 
   </main>
 
   <footer class="site-footer">

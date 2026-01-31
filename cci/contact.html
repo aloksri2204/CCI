@@ -11,7 +11,7 @@
     <div class="container header-inner">
       <a href="index.html" class="logo">
         <img src="assets/images/logo.svg" alt="CCI logo" height="40">
-        <span class="brand">CCI</span>
+        <span class="brand">Career Computer Institute</span>
       </a>
       <nav class="nav">
         <a href="index.html">Home</a>
@@ -26,16 +26,28 @@
     <h1>Contact / Enroll</h1>
     <p>Send us a message or enroll directly — we'll get back to you promptly.</p>
 
-    <form id="contactForm" class="form">
-      <label>Full name<input name="name" required></label>
-      <label>Email address<input name="email" type="email" required></label>
-      <label>Message<textarea name="message" rows="6" required></textarea></label>
-      <div class="form-actions">
-        <button type="submit" class="btn">Send</button>
-      </div>
-    </form>
+    <div class="contact-grid">
+      <div class="contact-form">
+        <form id="contactForm" class="form">
+          <label>Full name<input name="name" required></label>
+          <label>Email address<input name="email" type="email" required></label>
+          <label>Message<textarea name="message" rows="6" required></textarea></label>
+          <div class="form-actions">
+            <button type="submit" class="btn">Send</button>
+          </div>
+        </form>
 
-    <p class="muted">Or email: <a href="mailto:info@cci.example.com">info@cci.example.com</a></p>
+        <p class="muted">Or email: <a href="mailto:info@cci.example.com">info@cci.example.com</a></p>
+      </div>
+
+      <aside class="contact-map card">
+        <h3>Our Location</h3>
+        <div class="map-wrap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3599.040163221586!2d83.55612888020646!3d25.570330519387323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3991ff086d640e8b%3A0x8bb6dff75dfe0537!2sCCI%20Job%20Work%20%26%20Computer%20Typing%20Centre!5e0!3m2!1sen!2sin!4v1769869987039!5m2!1sen!2sin" frameborder="0" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <p class="small muted">Khajuriya, Ghazipur U.P 233001<br><a href="https://www.google.com/maps/search/?api=1&query=Khajuriya%2C+Ghazipur%2C+U.P+233001" target="_blank">Open in Google Maps</a></p>
+      </aside>
+    </div>
   </main>
 
   <footer class="site-footer">
